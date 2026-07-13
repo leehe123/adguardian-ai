@@ -1,0 +1,21 @@
+# Chrome unpacked-extension cache (generated at load time)
+_metadata/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local secrets / env
+.env
+*.local
+
+# Keep source & rules tracked
+!rules/
+!src/

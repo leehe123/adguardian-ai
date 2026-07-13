@@ -1,0 +1,467 @@
+{
+  "extName": {
+    "message": "AdGuardian AI - Smart Ad Blocker",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Dual-layer blocking: rule engine kills known ads instantly, DeepSeek AI detects native ads and promoted content",
+    "description": "Extension description"
+  },
+
+  "popup_rule_label": {
+    "message": "Rule Blocked"
+  },
+  "popup_ai_label": {
+    "message": "AI Blocked"
+  },
+  "popup_domain_label": {
+    "message": "Domain Rules"
+  },
+  "popup_details_title": {
+    "message": "Blocked Details"
+  },
+  "popup_empty_state": {
+    "message": "No blocks on this page"
+  },
+  "popup_pause_page": {
+    "message": "Pause This Page"
+  },
+  "popup_whitelist_site": {
+    "message": "Whitelist Site"
+  },
+  "popup_settings_link": {
+    "message": "Settings"
+  },
+  "popup_settings_title": {
+    "message": "Settings"
+  },
+  "popup_setup_key": {
+    "message": "Configure"
+  },
+  "popup_ai_no_key": {
+    "message": "AI blocking disabled: No API Key configured"
+  },
+  "popup_ai_closed": {
+    "message": "AI blocking off, rule engine only"
+  },
+  "popup_unblock_btn": {
+    "message": "False positive · Restore"
+  },
+  "popup_confidence_prefix": {
+    "message": "Confidence "
+  },
+  "popup_unknown_source": {
+    "message": "Unknown"
+  },
+  "popup_unknown_type": {
+    "message": "Unknown type"
+  },
+  "source_ai": {
+    "message": "AI"
+  },
+  "source_rule": {
+    "message": "Rule"
+  },
+  "source_cache": {
+    "message": "Cache"
+  },
+  "source_domain": {
+    "message": "Domain"
+  },
+  "strength_conservative": {
+    "message": "Conservative"
+  },
+  "strength_standard": {
+    "message": "Standard"
+  },
+  "strength_aggressive": {
+    "message": "Aggressive"
+  },
+  "strength_mode_suffix": {
+    "message": "mode"
+  },
+  "adtype_display": {
+    "message": "Display Ad"
+  },
+  "adtype_search": {
+    "message": "Search Ad"
+  },
+  "adtype_native": {
+    "message": "Native Ad"
+  },
+  "adtype_video": {
+    "message": "Video Ad"
+  },
+  "adtype_unknown": {
+    "message": "Unknown type"
+  },
+
+  "opt_title": {
+    "message": "AdGuardian AI Settings"
+  },
+  "opt_apikey_title": {
+    "message": "DeepSeek API Key"
+  },
+  "opt_apikey_desc": {
+    "message": "The AI layer requires a DeepSeek API Key. The Key is stored locally only and never uploaded to any server.<br>Get a Key: platform.deepseek.com"
+  },
+  "opt_show_hide": {
+    "message": "Show/Hide"
+  },
+  "opt_test_conn": {
+    "message": "Test Connection"
+  },
+  "opt_save_key": {
+    "message": "Save Key"
+  },
+  "opt_api_custom_title": {
+    "message": "Custom API Config"
+  },
+  "opt_api_custom_desc": {
+    "message": "DeepSeek API is used by default. To switch to another compatible API (e.g. local Ollama), customize the address and model name below. Leave blank to use defaults."
+  },
+  "opt_api_url_label": {
+    "message": "API URL"
+  },
+  "opt_api_model_label": {
+    "message": "Model Name"
+  },
+  "opt_api_timeout_label": {
+    "message": "Timeout (ms)"
+  },
+  "opt_save_api_config": {
+    "message": "Save API Config"
+  },
+  "opt_ai_title": {
+    "message": "AI Blocking Layer"
+  },
+  "opt_ai_toggle_label": {
+    "message": "Enable AI Smart Blocking"
+  },
+  "opt_ai_toggle_desc": {
+    "message": "AI decides whether to block suspected ad elements that the rule engine did not catch"
+  },
+  "opt_privacy_prefix": {
+    "message": "Privacy Notice: "
+  },
+  "opt_privacy_text": {
+    "message": "Once AI blocking is enabled, text content and structural features of some page elements will be sent to the DeepSeek API for ad detection. We do NOT send your cookies, browsing history, or personal identity information. Continuing means you acknowledge and agree."
+  },
+  "opt_consent_btn": {
+    "message": "Got it"
+  },
+  "opt_strength_title": {
+    "message": "Blocking Strength"
+  },
+  "opt_strength_conservative": {
+    "message": "Conservative"
+  },
+  "opt_strength_conservative_desc": {
+    "message": "Only block high confidence (≥95%), almost no false positives"
+  },
+  "opt_strength_standard": {
+    "message": "Standard"
+  },
+  "opt_strength_standard_desc": {
+    "message": "Balance block rate and false positives (≥80%)"
+  },
+  "opt_strength_aggressive": {
+    "message": "Aggressive"
+  },
+  "opt_strength_aggressive_desc": {
+    "message": "Maximize blocking (≥60%), may cause false positives"
+  },
+  "opt_rules_title": {
+    "message": "Rule Engine"
+  },
+  "opt_rules_toggle_label": {
+    "message": "Enable Rule Blocking"
+  },
+  "opt_rules_toggle_desc": {
+    "message": "Use rule lists to block known ad domains (free, millisecond-level)"
+  },
+  "opt_sub_title": {
+    "message": "Rule Subscriptions"
+  },
+  "opt_sub_desc": {
+    "message": "Subscribe to public ad-filter rule lists with automatic periodic updates. Rules take effect in real time once enabled."
+  },
+  "opt_loading": {
+    "message": "Loading..."
+  },
+  "opt_sub_name_placeholder": {
+    "message": "Rule name (e.g. My Rules)"
+  },
+  "opt_sub_url_placeholder": {
+    "message": "Rule list URL (ABP format)"
+  },
+  "opt_add_sub": {
+    "message": "Add Subscription"
+  },
+  "opt_update_all_sub": {
+    "message": "Update All Subscriptions"
+  },
+  "opt_whitelist_title": {
+    "message": "Whitelist Management"
+  },
+  "opt_whitelist_empty": {
+    "message": "No whitelisted domains"
+  },
+  "opt_whitelist_placeholder": {
+    "message": "example.com"
+  },
+  "opt_add": {
+    "message": "Add"
+  },
+  "opt_custom_rule_title": {
+    "message": "Custom Rules"
+  },
+  "opt_custom_rule_desc": {
+    "message": "Add a domain to block (network request blocking, millisecond-level) or a CSS selector (hide page elements). Rules take effect instantly, no refresh needed."
+  },
+  "opt_rule_type_domain": {
+    "message": "Block domain"
+  },
+  "opt_rule_type_selector": {
+    "message": "Hide element (CSS selector)"
+  },
+  "opt_rule_value_placeholder": {
+    "message": "example.com or .ad-banner, div#sponsor"
+  },
+  "opt_add_rule": {
+    "message": "Add Rule"
+  },
+  "opt_rule_comment_placeholder": {
+    "message": "Note (optional, e.g. block a site popup)"
+  },
+  "opt_stats_title": {
+    "message": "Blocking Stats"
+  },
+  "opt_stat_rule_blocks": {
+    "message": "Rule Blocked"
+  },
+  "opt_stat_ai_blocks": {
+    "message": "AI Blocked"
+  },
+  "opt_stat_api_calls": {
+    "message": "API Calls"
+  },
+  "opt_stat_cache_hits": {
+    "message": "Cache Hits"
+  },
+  "opt_stat_domain_hits": {
+    "message": "Domain Rule Hits"
+  },
+  "opt_stat_false_pos": {
+    "message": "False Positives"
+  },
+  "opt_stat_pages": {
+    "message": "Pages Scanned"
+  },
+  "opt_clear_cache": {
+    "message": "Clear AI Cache"
+  },
+  "opt_clear_domain_rules": {
+    "message": "Clear Domain Rules"
+  },
+  "opt_reset_stats": {
+    "message": "Reset Stats"
+  },
+
+  "opt_alert_api_url_invalid": {
+    "message": "Invalid API URL, must start with http:// or https://"
+  },
+  "opt_toast_api_saved": {
+    "message": "API config saved"
+  },
+  "opt_test_enter_key": {
+    "message": "Please enter API Key"
+  },
+  "opt_test_no_key": {
+    "message": "Please enter API Key first"
+  },
+  "opt_testing": {
+    "message": "Testing..."
+  },
+  "opt_key_saved": {
+    "message": "Key saved"
+  },
+  "opt_conn_success": {
+    "message": "Connection successful"
+  },
+  "opt_conn_fail": {
+    "message": "Connection failed: "
+  },
+  "opt_alert_config_key_first": {
+    "message": "Please configure API Key first"
+  },
+  "opt_alert_valid_domain": {
+    "message": "Please enter a valid domain, e.g. example.com"
+  },
+  "opt_alert_domain_exists": {
+    "message": "Domain already in whitelist"
+  },
+  "opt_rule_type_domain_label": {
+    "message": "Domain Block"
+  },
+  "opt_rule_type_selector_label": {
+    "message": "Element Hide"
+  },
+  "opt_empty_custom_rules": {
+    "message": "No custom rules"
+  },
+  "opt_alert_enter_rule": {
+    "message": "Please enter rule content"
+  },
+  "opt_alert_valid_domain_rule": {
+    "message": "Please enter a valid domain, e.g. ads.example.com"
+  },
+  "opt_alert_invalid_selector": {
+    "message": "Invalid CSS selector, please check"
+  },
+  "opt_alert_add_rule_fail": {
+    "message": "Failed to add rule"
+  },
+  "opt_confirm_delete_rule": {
+    "message": "Delete this rule?"
+  },
+  "opt_empty_subs": {
+    "message": "No subscriptions, add below"
+  },
+  "opt_sub_load_fail": {
+    "message": "Subscription load failed, please retry"
+  },
+  "opt_sub_custom_tag": {
+    "message": "Custom"
+  },
+  "opt_sub_preset_tag": {
+    "message": "Preset"
+  },
+  "opt_sub_not_downloaded": {
+    "message": "Not downloaded"
+  },
+  "opt_sub_rules_unit": {
+    "message": "rules"
+  },
+  "opt_update_btn": {
+    "message": "Update"
+  },
+  "opt_updating": {
+    "message": "Updating..."
+  },
+  "opt_toast_update_success": {
+    "message": "Update success: {n} rules"
+  },
+  "opt_toast_update_fail": {
+    "message": "Update failed: "
+  },
+  "opt_confirm_delete_sub": {
+    "message": "Delete subscription \"{name}\"?\n\nAll rules from this subscription will be removed immediately."
+  },
+  "opt_toast_deleted_sub": {
+    "message": "Subscription \"{name}\" deleted"
+  },
+  "opt_delete_fail": {
+    "message": "Delete failed: "
+  },
+  "opt_alert_enter_name_url": {
+    "message": "Please enter rule name and URL"
+  },
+  "opt_alert_valid_url": {
+    "message": "Please enter a valid URL (starting with http:// or https://)"
+  },
+  "opt_alert_add_sub_fail": {
+    "message": "Add failed: "
+  },
+  "opt_confirm_clear_cache": {
+    "message": "Clear the AI decision cache? After clearing, the same ad elements will need to call AI again for judgment."
+  },
+  "opt_alert_cache_cleared": {
+    "message": "AI cache cleared"
+  },
+  "opt_confirm_clear_domain": {
+    "message": "Clear the domain rule library? After clearing, the learned domain ad rules will be invalid and AI will need to be called again on next visit."
+  },
+  "opt_alert_domain_cleared": {
+    "message": "Domain rules cleared"
+  },
+  "opt_confirm_reset_stats": {
+    "message": "Reset all statistics?"
+  },
+  "opt_format_just_now": {
+    "message": "Just now"
+  },
+  "opt_format_mins_ago": {
+    "message": "{n} min ago"
+  },
+  "opt_format_hours_ago": {
+    "message": "{n} h ago"
+  },
+  "opt_format_days_ago": {
+    "message": "{n} d ago"
+  },
+  "opt_format_updated_at": {
+    "message": "Updated"
+  },
+
+  "opt_remove": {
+    "message": "Remove"
+  },
+  "opt_update_complete": {
+    "message": "Update complete: {n}/{m} subscriptions"
+  },
+  "opt_toggle_fail": {
+    "message": "Toggle failed: "
+  },
+  "opt_aria_remove_rule": {
+    "message": "Delete rule"
+  },
+  "opt_aria_remove_sub": {
+    "message": "Delete subscription"
+  },
+  "menu_toggle_ai": {
+    "message": "AdGuardian AI: Toggle AI Blocking"
+  },
+  "menu_block_element": {
+    "message": "AdGuardian AI: Block This Element"
+  },
+  "err_no_valid_tab": {
+    "message": "No valid tab"
+  },
+  "err_unknown_msg": {
+    "message": "Unknown message type"
+  },
+  "err_api_timeout": {
+    "message": "API request timed out"
+  },
+  "err_api_network": {
+    "message": "API network error: "
+  },
+  "err_api_status": {
+    "message": "API returned {status}: {body}"
+  },
+  "err_enter_api_key": {
+    "message": "Please enter API Key"
+  },
+  "err_api_401": {
+    "message": "Invalid API Key (401 Unauthorized)"
+  },
+  "err_api_429": {
+    "message": "Rate limited (429)"
+  },
+  "err_timeout": {
+    "message": "Request timed out"
+  },
+  "picker_tip": {
+    "message": "Click an element to block it, ESC to cancel"
+  },
+  "picker_block_title": {
+    "message": "Block This Element"
+  },
+  "picker_cancel": {
+    "message": "Cancel"
+  },
+  "picker_confirm": {
+    "message": "Block"
+  }
+}

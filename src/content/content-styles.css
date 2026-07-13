@@ -1,0 +1,12 @@
+/* AdGuardian AI - Content Script 隐藏样式 */
+
+/* 被标记为广告的元素直接隐藏 */
+[data-adguardian-hidden="true"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}

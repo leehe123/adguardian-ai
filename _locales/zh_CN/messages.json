@@ -1,0 +1,467 @@
+{
+  "extName": {
+    "message": "AdGuardian AI - 智能广告拦截",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "规则引擎 + AI 双层拦截：传统规则秒杀已知广告，DeepSeek AI 识别原生广告和信息流推广",
+    "description": "Extension description"
+  },
+
+  "popup_rule_label": {
+    "message": "规则拦截"
+  },
+  "popup_ai_label": {
+    "message": "AI 拦截"
+  },
+  "popup_domain_label": {
+    "message": "域名规则"
+  },
+  "popup_details_title": {
+    "message": "拦截明细"
+  },
+  "popup_empty_state": {
+    "message": "本页暂无拦截记录"
+  },
+  "popup_pause_page": {
+    "message": "本页暂停"
+  },
+  "popup_whitelist_site": {
+    "message": "本站白名单"
+  },
+  "popup_settings_link": {
+    "message": "设置"
+  },
+  "popup_settings_title": {
+    "message": "设置"
+  },
+  "popup_setup_key": {
+    "message": "去配置"
+  },
+  "popup_ai_no_key": {
+    "message": "AI 拦截未启用：未配置 API Key"
+  },
+  "popup_ai_closed": {
+    "message": "AI 拦截已关闭，仅规则引擎生效"
+  },
+  "popup_unblock_btn": {
+    "message": "误报 · 恢复"
+  },
+  "popup_confidence_prefix": {
+    "message": "置信度 "
+  },
+  "popup_unknown_source": {
+    "message": "未知"
+  },
+  "popup_unknown_type": {
+    "message": "未知类型"
+  },
+  "source_ai": {
+    "message": "AI 拦截"
+  },
+  "source_rule": {
+    "message": "规则拦截"
+  },
+  "source_cache": {
+    "message": "缓存命中"
+  },
+  "source_domain": {
+    "message": "域名规则"
+  },
+  "strength_conservative": {
+    "message": "保守"
+  },
+  "strength_standard": {
+    "message": "标准"
+  },
+  "strength_aggressive": {
+    "message": "激进"
+  },
+  "strength_mode_suffix": {
+    "message": "模式"
+  },
+  "adtype_display": {
+    "message": "展示广告"
+  },
+  "adtype_search": {
+    "message": "搜索广告"
+  },
+  "adtype_native": {
+    "message": "信息流广告"
+  },
+  "adtype_video": {
+    "message": "视频广告"
+  },
+  "adtype_unknown": {
+    "message": "未知类型"
+  },
+
+  "opt_title": {
+    "message": "AdGuardian AI 设置"
+  },
+  "opt_apikey_title": {
+    "message": "DeepSeek API Key"
+  },
+  "opt_apikey_desc": {
+    "message": "AI 拦截层需要 DeepSeek API Key。Key 仅存储在本地，不会上传到任何服务器。<br>获取 Key：platform.deepseek.com"
+  },
+  "opt_show_hide": {
+    "message": "显示/隐藏"
+  },
+  "opt_test_conn": {
+    "message": "测试连接"
+  },
+  "opt_save_key": {
+    "message": "保存 Key"
+  },
+  "opt_api_custom_title": {
+    "message": "API 自定义配置"
+  },
+  "opt_api_custom_desc": {
+    "message": "默认使用 DeepSeek API。如需切换为其他兼容 API（如本地 Ollama），可自定义下方地址和模型名。留空则使用默认值。"
+  },
+  "opt_api_url_label": {
+    "message": "API 地址"
+  },
+  "opt_api_model_label": {
+    "message": "模型名称"
+  },
+  "opt_api_timeout_label": {
+    "message": "超时时间（ms）"
+  },
+  "opt_save_api_config": {
+    "message": "保存 API 配置"
+  },
+  "opt_ai_title": {
+    "message": "AI 拦截层"
+  },
+  "opt_ai_toggle_label": {
+    "message": "启用 AI 智能拦截"
+  },
+  "opt_ai_toggle_desc": {
+    "message": "对规则引擎未命中的疑似广告元素，由 AI 判定是否拦截"
+  },
+  "opt_privacy_prefix": {
+    "message": "隐私提示："
+  },
+  "opt_privacy_text": {
+    "message": "启用 AI 拦截后，部分网页元素的文本内容和结构特征将发送至 DeepSeek API 进行广告判定。我们不会发送您的 Cookie、浏览历史或个人身份信息。继续即表示您知悉并同意。"
+  },
+  "opt_consent_btn": {
+    "message": "我知道了"
+  },
+  "opt_strength_title": {
+    "message": "拦截强度"
+  },
+  "opt_strength_conservative": {
+    "message": "保守"
+  },
+  "opt_strength_conservative_desc": {
+    "message": "只拦截高置信度（≥95%），几乎不误杀"
+  },
+  "opt_strength_standard": {
+    "message": "标准"
+  },
+  "opt_strength_standard_desc": {
+    "message": "平衡拦截率与误杀（≥80%）"
+  },
+  "opt_strength_aggressive": {
+    "message": "激进"
+  },
+  "opt_strength_aggressive_desc": {
+    "message": "最大化拦截（≥60%），可能误杀"
+  },
+  "opt_rules_title": {
+    "message": "规则引擎"
+  },
+  "opt_rules_toggle_label": {
+    "message": "启用规则拦截"
+  },
+  "opt_rules_toggle_desc": {
+    "message": "使用规则列表拦截已知广告域名（免费、毫秒级）"
+  },
+  "opt_sub_title": {
+    "message": "规则订阅"
+  },
+  "opt_sub_desc": {
+    "message": "订阅公开广告过滤规则列表，自动定期更新。启用后规则将实时生效。"
+  },
+  "opt_loading": {
+    "message": "加载中..."
+  },
+  "opt_sub_name_placeholder": {
+    "message": "规则名称（如：我的规则）"
+  },
+  "opt_sub_url_placeholder": {
+    "message": "规则列表 URL（ABP 格式）"
+  },
+  "opt_add_sub": {
+    "message": "添加订阅"
+  },
+  "opt_update_all_sub": {
+    "message": "立即更新所有订阅"
+  },
+  "opt_whitelist_title": {
+    "message": "白名单管理"
+  },
+  "opt_whitelist_empty": {
+    "message": "暂无白名单域名"
+  },
+  "opt_whitelist_placeholder": {
+    "message": "example.com"
+  },
+  "opt_add": {
+    "message": "添加"
+  },
+  "opt_custom_rule_title": {
+    "message": "自定义规则"
+  },
+  "opt_custom_rule_desc": {
+    "message": "添加要拦截的域名（网络请求拦截，毫秒级）或 CSS 选择器（隐藏页面元素）。规则实时生效，无需刷新。"
+  },
+  "opt_rule_type_domain": {
+    "message": "拦截域名"
+  },
+  "opt_rule_type_selector": {
+    "message": "隐藏元素（CSS 选择器）"
+  },
+  "opt_rule_value_placeholder": {
+    "message": "example.com 或 .ad-banner, div#sponsor"
+  },
+  "opt_add_rule": {
+    "message": "添加规则"
+  },
+  "opt_rule_comment_placeholder": {
+    "message": "备注（可选，如：屏蔽某网站弹窗）"
+  },
+  "opt_stats_title": {
+    "message": "拦截统计"
+  },
+  "opt_stat_rule_blocks": {
+    "message": "规则拦截"
+  },
+  "opt_stat_ai_blocks": {
+    "message": "AI 拦截"
+  },
+  "opt_stat_api_calls": {
+    "message": "API 调用"
+  },
+  "opt_stat_cache_hits": {
+    "message": "缓存命中"
+  },
+  "opt_stat_domain_hits": {
+    "message": "域名规则命中"
+  },
+  "opt_stat_false_pos": {
+    "message": "误报反馈"
+  },
+  "opt_stat_pages": {
+    "message": "扫描页面"
+  },
+  "opt_clear_cache": {
+    "message": "清空 AI 缓存"
+  },
+  "opt_clear_domain_rules": {
+    "message": "清空域名规则"
+  },
+  "opt_reset_stats": {
+    "message": "重置统计"
+  },
+
+  "opt_alert_api_url_invalid": {
+    "message": "API 地址格式不正确，请以 http:// 或 https:// 开头"
+  },
+  "opt_toast_api_saved": {
+    "message": "API 配置已保存"
+  },
+  "opt_test_enter_key": {
+    "message": "请输入 API Key"
+  },
+  "opt_test_no_key": {
+    "message": "请先输入 API Key"
+  },
+  "opt_testing": {
+    "message": "测试中..."
+  },
+  "opt_key_saved": {
+    "message": "Key 已保存"
+  },
+  "opt_conn_success": {
+    "message": "连接成功"
+  },
+  "opt_conn_fail": {
+    "message": "连接失败："
+  },
+  "opt_alert_config_key_first": {
+    "message": "请先配置 API Key"
+  },
+  "opt_alert_valid_domain": {
+    "message": "请输入有效的域名，如 example.com"
+  },
+  "opt_alert_domain_exists": {
+    "message": "该域名已在白名单中"
+  },
+  "opt_rule_type_domain_label": {
+    "message": "域名拦截"
+  },
+  "opt_rule_type_selector_label": {
+    "message": "元素隐藏"
+  },
+  "opt_empty_custom_rules": {
+    "message": "暂无自定义规则"
+  },
+  "opt_alert_enter_rule": {
+    "message": "请输入规则内容"
+  },
+  "opt_alert_valid_domain_rule": {
+    "message": "请输入有效的域名，如 ads.example.com"
+  },
+  "opt_alert_invalid_selector": {
+    "message": "CSS 选择器语法无效，请检查"
+  },
+  "opt_alert_add_rule_fail": {
+    "message": "添加规则失败"
+  },
+  "opt_confirm_delete_rule": {
+    "message": "确定要删除这条规则吗？"
+  },
+  "opt_empty_subs": {
+    "message": "暂无订阅规则，点击下方输入框添加"
+  },
+  "opt_sub_load_fail": {
+    "message": "订阅加载失败，请重试"
+  },
+  "opt_sub_custom_tag": {
+    "message": "自定义"
+  },
+  "opt_sub_preset_tag": {
+    "message": "预置"
+  },
+  "opt_sub_not_downloaded": {
+    "message": "未下载"
+  },
+  "opt_sub_rules_unit": {
+    "message": "条规则"
+  },
+  "opt_update_btn": {
+    "message": "更新"
+  },
+  "opt_updating": {
+    "message": "更新中..."
+  },
+  "opt_toast_update_success": {
+    "message": "更新成功：{n} 条规则"
+  },
+  "opt_toast_update_fail": {
+    "message": "更新失败："
+  },
+  "opt_confirm_delete_sub": {
+    "message": "确定要删除订阅「{name}」吗？\n\n删除后该订阅的所有规则会立即失效。"
+  },
+  "opt_toast_deleted_sub": {
+    "message": "已删除订阅「{name}」"
+  },
+  "opt_delete_fail": {
+    "message": "删除失败："
+  },
+  "opt_alert_enter_name_url": {
+    "message": "请输入规则名称和 URL"
+  },
+  "opt_alert_valid_url": {
+    "message": "请输入有效的 URL（以 http:// 或 https:// 开头）"
+  },
+  "opt_alert_add_sub_fail": {
+    "message": "添加失败："
+  },
+  "opt_confirm_clear_cache": {
+    "message": "确定要清空 AI 决策缓存吗？清空后相同的广告元素将需要重新调用 AI 判定。"
+  },
+  "opt_alert_cache_cleared": {
+    "message": "AI 缓存已清空"
+  },
+  "opt_confirm_clear_domain": {
+    "message": "确定要清空域名规则库吗？清空后已学习的域名广告规则将失效，下次访问需重新调用 AI。"
+  },
+  "opt_alert_domain_cleared": {
+    "message": "域名规则库已清空"
+  },
+  "opt_confirm_reset_stats": {
+    "message": "确定要重置所有统计数据吗？"
+  },
+  "opt_format_just_now": {
+    "message": "刚刚"
+  },
+  "opt_format_mins_ago": {
+    "message": "{n} 分钟前"
+  },
+  "opt_format_hours_ago": {
+    "message": "{n} 小时前"
+  },
+  "opt_format_days_ago": {
+    "message": "{n} 天前"
+  },
+  "opt_format_updated_at": {
+    "message": "更新于"
+  },
+
+  "opt_remove": {
+    "message": "移除"
+  },
+  "opt_update_complete": {
+    "message": "更新完成：{n}/{m} 个订阅成功"
+  },
+  "opt_toggle_fail": {
+    "message": "切换失败："
+  },
+  "opt_aria_remove_rule": {
+    "message": "删除规则"
+  },
+  "opt_aria_remove_sub": {
+    "message": "删除订阅"
+  },
+  "menu_toggle_ai": {
+    "message": "AdGuardian AI: 开启/关闭 AI 拦截"
+  },
+  "menu_block_element": {
+    "message": "AdGuardian AI: 屏蔽此元素"
+  },
+  "err_no_valid_tab": {
+    "message": "无有效标签页"
+  },
+  "err_unknown_msg": {
+    "message": "未知消息类型"
+  },
+  "err_api_timeout": {
+    "message": "API 请求超时"
+  },
+  "err_api_network": {
+    "message": "API 网络错误："
+  },
+  "err_api_status": {
+    "message": "API 返回 {status}：{body}"
+  },
+  "err_enter_api_key": {
+    "message": "请输入 API Key"
+  },
+  "err_api_401": {
+    "message": "API Key 无效（401 未授权）"
+  },
+  "err_api_429": {
+    "message": "请求频率超限（429）"
+  },
+  "err_timeout": {
+    "message": "请求超时"
+  },
+  "picker_tip": {
+    "message": "点击元素将其屏蔽，按 ESC 取消"
+  },
+  "picker_block_title": {
+    "message": "屏蔽此元素"
+  },
+  "picker_cancel": {
+    "message": "取消"
+  },
+  "picker_confirm": {
+    "message": "屏蔽"
+  }
+}
