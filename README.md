@@ -12,9 +12,17 @@
   <i>A Chrome (Manifest V3) ad blocker that combines a rule engine with DeepSeek AI for native-ad &amp; feed-promotion detection.</i>
 </p>
 
+<p align="center">
+  <a href="#中文说明"><b>🇨🇳 中文</b></a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#english-documentation"><b>🇬🇧 English</b></a>
+</p>
+
 ---
 
 # 中文说明
+
+> 🌐 想看英文版？[Switch to English →](#english-documentation)
 
 ## 项目简介
 
@@ -201,6 +209,8 @@ node scripts/generate-icons.js
 ---
 
 # English Documentation
+
+> 🌐 Prefer Chinese? [切换到中文 →](#中文说明)
 
 ## Introduction
 
